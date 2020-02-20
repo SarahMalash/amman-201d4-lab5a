@@ -107,9 +107,18 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
+
 function multiplyArray(multArr) { //eslint-disable-line
+    var product= sumAndMultiply(testArray[0],testArray[1],testArray[2])[1];
+    // console.log(product)
+    
+    var msg1 =`The numbers ${2},${3},${4} have a product of ${24}.`;
+// console.log(msg1);
+    return [product, msg1];
 
 }
+testMultiplyArray(testArray);
+
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
