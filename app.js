@@ -31,9 +31,11 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-
+var mult = a * b;
+var msg = `The product of ${a} and ${b} is ${mult}.`;
+return [mult, msg];
 }
-
+testMultiply();
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
 
