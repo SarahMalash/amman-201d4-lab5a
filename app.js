@@ -9,12 +9,12 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sum(a, b) { //eslint-disable-line
-    var theSum = a+b;
+    var theSum = a + b;
     // 'The sum of 4 and 7 is 11.'
     var message = `The sum of ${a} and ${b} is ${theSum}.`;
     return [theSum, message];
 }
-testSum(4,7);
+testSum(4, 7);
 
 // Here is the test for sum(); uncomment it to run it
 // testSum(4, 7);
@@ -31,9 +31,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-var mult = a * b;
-var msg = `The product of ${a} and ${b} is ${mult}.`;
-return [mult, msg];
+    var mult = a * b;
+    var msg = `The product of ${a} and ${b} is ${mult}.`;
+    return [mult, msg];
 }
 testMultiply();
 // Here is the test for multiply(); uncomment it to run it
@@ -55,7 +55,14 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
 
+    var sum1 = sum(a,b)[0] + c;
+    var mult2 = multiply(a,b)[0] * c;
+    var msg1 = `${a} and ${b} and ${c} sum to ${sum1}.`
+    var msg2 = `The product of ${a} and ${b} and ${c} is ${mult2}.`
+    return [sum1, mult2, msg1, msg2];
+
 }
+testSumAndMultiply();
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 // testSumAndMultiply(4,7,5);
@@ -122,7 +129,7 @@ This function should be dynamic, accepting an array of any length.
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyAnyArray() function and see if the test passes.*/
 
 // Write your code here
-var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
+var testDynamicArray = [1, 2, 3, 4, 5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
 
